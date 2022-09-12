@@ -8,7 +8,8 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier"
+    "prettier",
+    "eslint-config-prettier"
   ],
   "env": {
     "es2021": true,

@@ -1,0 +1,15 @@
+{
+      "arrowParens": "always",
+      "trailingComma": "es5",
+      "semi": false,
+      "tabWidth": 4,
+      "singleQuote": true,
+      "overrides": [
+            {
+                  "files": ["*.json", "*.graphql"],
+                  "options": {
+                        "tabWidth": 2
+                  }
+            }
+      ]
+}
