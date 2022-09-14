@@ -30,7 +30,7 @@ It is a platform to find the perfect partner to play your favorite game together
 
 ### Server
 
-First crete a new ``.env`` file on the root directory using the `.env.example` template.
+First, create a new ``.env`` file on the root directory, using the `.env.example` template as base.
 
 Then, to create the local db run:
 ```sh
