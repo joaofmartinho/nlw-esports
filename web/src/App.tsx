@@ -27,22 +27,18 @@ function App() {
     }
 
     return (
-        <div className="max-w-[1344px] mx-auto flex flex-col items-center my-20">
+        <div className="max-w-[1344px] mx-auto flex flex-col items-center my-20 ">
             <img src={logoImage} alt="Next Level Week Exports Logo" />
 
-            <h1 className="text-6xl text-white font-black mt-16">
-                Seu{' '}
-                <span className="text-transparent bg-galaxy-gradient bg-clip-text">
-                    duo
-                </span>{' '}
-                está aqui
+            <h1 className="text-6xl text-white font-black mt-16 bg-galaxy-gradient bg-clip-text">
+                Seu <span className="text-transparent">duo</span> está aqui
             </h1>
 
             <div className="grid grid-cols-6 gap-6 mt-16">
                 {renderGameCards()}
             </div>
 
-            <div className="pt-1 bg-galaxy-gradient self-stretch rounded-lg mt-8 overflow-hidden">
+            <div className="pt-1 bg-galaxy-gradient self-stretch rounded-md mt-8 overflow-hidden">
                 <div className="bg-[#2A2634] px-8 py-6 flex justify-between items-center">
                     <div>
                         <strong className="text-2xl text-white font-black block">

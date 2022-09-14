@@ -19,11 +19,28 @@ It is a platform to find the perfect partner to play your favorite game together
 
 ## Stack and tools
 * [Node.js](https://nodejs.org/en/)
+* [Prisma](https://www.prisma.io/)
 * [React](https://reactjs.org/)
 * [React Native](https://reactnative.dev/)
 * [Expo](https://expo.dev/)
 * [Figma](https://www.figma.com/)
 
+
+## Quickstart
+
+### Server
+
+First crete a new ``.env`` file on the root directory using the `.env.example` template.
+
+Then, to create the local db run:
+```sh
+$ npm run db:migrate
+```
+
+After that, to start the server, run:
+```sh
+$ npm run dev
+```
 
 
 
