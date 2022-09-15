@@ -5,9 +5,22 @@
 
 The evolved version of the **Esports** project on the [Next Level Week](https://lp.rocketseat.com.br/nlw) by Rocketseat.
 
+The web version is deployed on Vercel here:
+
+ https://nlw-esports-ignite.vercel.app/
+
+The server is deployed on Fly. You can test it here: 
+
+https://nlw-esports.fly.dev/games
+
+<hr>
+<br>
 
   - [Description](#description)
   - [Stack and tools](#stack-and-tools)
+  - [Quickstart](#quickstart)
+
+<br>
 
 ## Description
 
