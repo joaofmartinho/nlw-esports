@@ -17,7 +17,7 @@ function App() {
     const [games, setGames] = useState<Game[]>()
 
     useEffect(() => {
-        fetch('http://nlw-esports.fly.dev:8080/games')
+        fetch('https://nlw-esports.fly.dev:8080/games')
             .then((response) => response.json())
             .then((data) => {
                 setGames(data)
