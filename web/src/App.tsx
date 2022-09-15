@@ -1,10 +1,10 @@
-import { GameController, MagnifyingGlassPlus } from 'phosphor-react'
+import { GameController } from 'phosphor-react'
 import { useEffect, useState } from 'react'
 import * as Dialog from '@radix-ui/react-dialog'
 import logoImage from './assets/nlw-esports-logo.svg'
 import { GameCard } from './components/GameCard'
 import { NewAdBanner } from './components/NewAdBanner'
-import { Input } from './components/Form/input'
+import { Input } from './components/Form/Input'
 
 interface Game {
     id: string
