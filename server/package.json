@@ -4,6 +4,7 @@
   "description": "",
   "main": "src/server.ts",
   "scripts": {
+    "start": "tsnd --exit-child --transpile-only src/server.ts",
     "build": "tsc",
     "dev": "tsnd --exit-child src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
