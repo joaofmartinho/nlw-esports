@@ -48,6 +48,7 @@ First, create a new ``.env`` file on the root directory, using the `.env.example
 
 Then, to create the local db run:
 ```sh
+$ npm install
 $ npm run db:migrate
 ```
 
@@ -56,6 +57,12 @@ After that, to start the server, run:
 $ npm run dev
 ```
 
+### Web
 
+To run the local Vite web client:
+```sh
+$ npm install
+$ npm run dev
+```
 
 

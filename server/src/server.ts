@@ -19,6 +19,7 @@ app.get('/games', async (request, response) => {
         },
     })
 
+    // eslint-disable-next-line no-console
     console.log('Request from', request.headers.origin)
 
     return response.json(games).status(200)
