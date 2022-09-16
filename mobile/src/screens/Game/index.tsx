@@ -12,6 +12,7 @@ import { styles } from './styles';
 import { Heading } from '../../components/Heading';
 import { DuoCard, DuoCardProps } from '../../components/DuoCard';
 import { GameCardProps } from '../../components/GameCard';
+import { DuoMatch } from '../../components/DuoMatch';
 
 export function Game() {
   const navigation = useNavigation();
@@ -19,18 +20,26 @@ export function Game() {
   const game = route.params as GameParams;
 
   const [duos, setDuos] = useState<DuoCardProps[]>([]);
+  const [isDiscordModalOpen, setIsDiscordModalOpen] = useState<boolean>(false);
+  const [discordUsername, setDiscordUsername] = useState<string>('');
 
   const handleGoBack = () => {
     navigation.goBack();
   };
 
-  console.log('idd', game.id);
+  const getDiscordUsername = async (adsId: string) => {
+    fetch(`https://nlw-esports.fly.dev/ads/${adsId}/discord`)
+      .then((response) => response.json())
+      .then((data) => {
+        setDiscordUsername(data.ad.discord);
+        setIsDiscordModalOpen(true);
+      });
+  };
 
   useEffect(() => {
     fetch(`https://nlw-esports.fly.dev/games/${game.id}/ad`)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setDuos(data);
       });
   }, []);
@@ -65,7 +74,12 @@ export function Game() {
           data={duos}
           keyExtractor={(item) => item.id}
           renderItem={({ item }) => (
-            <DuoCard data={item} onConnect={() => {}}></DuoCard>
+            <DuoCard
+              data={item}
+              onConnect={() => {
+                getDiscordUsername(item.id);
+              }}
+            ></DuoCard>
           )}
           horizontal
           style={styles.containerList}
@@ -79,6 +93,12 @@ export function Game() {
             </Text>
           )}
         ></FlatList>
+
+        <DuoMatch
+          visible={isDiscordModalOpen}
+          discord={discordUsername}
+          onClose={() => setIsDiscordModalOpen(false)}
+        ></DuoMatch>
       </SafeAreaView>
     </Background>
   );
