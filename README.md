@@ -37,7 +37,7 @@ It is a platform to find the perfect partner to play your favorite game together
 * [React Native](https://reactnative.dev/)
 * [Expo](https://expo.dev/)
 * [Figma](https://www.figma.com/)
-* [RadixUI](https://www.radix-ui.com/)
+* [Radix UI](https://www.radix-ui.com/)
 
 
 ## Quickstart
