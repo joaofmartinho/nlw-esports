@@ -1,4 +1,4 @@
-# fly.toml file generated for nlw-esports on 2022-09-15T19:31:22+01:00
+# fly.toml file generated for nlw-esports on 2022-09-16T20:07:09+01:00
 
 app = "nlw-esports"
 kill_signal = "SIGINT"
